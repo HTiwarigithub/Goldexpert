@@ -90,7 +90,12 @@ router.get('', function(req, res) {
  router.post('/Signup/signup',signup.signup);
  router.post('/Signup/validateotp',signup.validate_otp);
  router.post('/Signup/ResendOtp',signup.ResendOtp);
- 
+ router.post('/Signup/adminlogin',signup.adminlogin);
+ router.post('/Signup/Admininsert',signup.Admininsert);
+ router.post('/Signup/change_password',signup.change_password);
+ router.get('/Signup/check',signup.check);
+
+
  router.post('/Payment/orderid',Payment.orderid);
  router.post('/Payment/updatetxn',Payment.updatetxn);
  router.post('/Payment/Paytm_op',Payment.Paytm_op);
@@ -102,3 +107,5 @@ router.get('', function(req, res) {
  router.post('/range/Old_gold_jewel',range.Old_gold_jewel);
  router.post('/range/Silver_range',range.Silver_range);
 
+ router.post('/range/cal_gold',range.cal_gold);
+ router.post('/range/cal_gold_purity',range.cal_gold_purity);

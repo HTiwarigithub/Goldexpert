@@ -9,6 +9,7 @@ exports.orderid = (req, res) => {
         var request = new db.Request();
         request.input('ActionType', db.NVarChar, 'OrderId');
         request.input('Amount', db.NVarChar, req.body.Amount);
+        request.input('App_type', db.NVarChar, req.body.App_type);
         request.input('User_ID', db.NVarChar, req.body.User_ID);
         request.execute('Payment', (error, result) => {
             if (error) {
