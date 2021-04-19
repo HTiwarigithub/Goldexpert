@@ -40,7 +40,7 @@ var connection = {
     server: 'sql5074.site4now.net',
     user:  'DB_A3CE37_goldexpert_admin',
     password: 'Gold@1234', 
-    database : 'DB_A3CE37_goldexpert',
+    database : 'DB_A3CE37_goldexpert',    
     options: {  
         enableArithAbort: false
       }
